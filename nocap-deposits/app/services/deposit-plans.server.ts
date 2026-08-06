@@ -94,7 +94,7 @@ export async function createDepositPlan(
       variables: {
         input: {
           name,
-          merchantCode: "uncapped-deposit",
+          merchantCode: "nocap-deposit",
           options: ["Deposit"],
           position: 1,
           sellingPlansToCreate: [

@@ -1,4 +1,4 @@
-# Uncapped Deposits
+# NoCap Deposits
 
 Shopify app for deposits & partial payments with **flat pricing** — no
 percentage fees, no order-value caps, no overages. Ever.

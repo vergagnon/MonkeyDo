@@ -55,7 +55,7 @@ export default function Dashboard() {
   const currency = orders[0]?.currency ?? "CAD";
 
   return (
-    <Page title="Uncapped Deposits">
+    <Page title="NoCap Deposits">
       <Layout>
         <Layout.Section>
           <InlineGrid columns={{ xs: 1, sm: 2 }} gap="400">

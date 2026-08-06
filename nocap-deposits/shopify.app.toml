@@ -1,7 +1,7 @@
 # This file stores configurations for your Shopify app.
 
-name = "Uncapped Deposits"
-client_id = ""
+name = "NoCap Deposits"
+client_id = "fd539a95a41afab22069e73ff8bb0745"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
