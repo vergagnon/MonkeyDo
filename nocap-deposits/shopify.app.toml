@@ -1,7 +1,9 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 name = "NoCap Deposits"
 client_id = "fd539a95a41afab22069e73ff8bb0745"
+application_url = "https://example.com"
+embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
@@ -9,44 +11,35 @@ client_id = "fd539a95a41afab22069e73ff8bb0745"
 # read_customer_payment_methods + write_payment_mandate (requires Shopify
 # approval — request via the Partner dashboard once the app record exists).
 scopes = "write_products,read_orders,read_purchase_options,write_purchase_options"
+optional_scopes = [ ]
+use_legacy_install_flow = false
+
+[build]
+automatically_update_urls_on_dev = true
 
 [webhooks]
-api_version = "2024-10"
+api_version = "2026-07"
 
-  # Handled by: /app/routes/webhooks.app.uninstalled.tsx
   [[webhooks.subscriptions]]
   uri = "/webhooks/app/uninstalled"
-  topics = ["app/uninstalled"]
+  topics = [ "app/uninstalled" ]
 
-  # Handled by: /app/routes/webhooks.app.scopes_update.tsx
   [[webhooks.subscriptions]]
-  topics = [ "app/scopes_update" ]
   uri = "/webhooks/app/scopes_update"
+  topics = [ "app/scopes_update" ]
 
+  # TEMPORARILY DISABLED — orders/create carries protected customer data, and
+  # deploys fail until the app is granted access: Dev Dashboard → NoCap
+  # Deposits → API access → "Protected customer data access" → request
+  # "App functionality". Uncomment and re-deploy once granted.
   # Handled by: /app/routes/webhooks.orders.create.tsx
-  # Records deposit orders so the dashboard can track outstanding balances.
-  [[webhooks.subscriptions]]
-  topics = ["orders/create"]
-  uri = "/webhooks/orders/create"
-
-  # Webhooks can have filters
-  # Only receive webhooks for product updates with a product price >= 10.00
-  # See: https://shopify.dev/docs/apps/build/webhooks/customize/filters
   # [[webhooks.subscriptions]]
-  # topics = ["products/update"]
-  # uri = "/webhooks/products/update"
-  # filter = "variants.price:>=10.00"
+  # uri = "/webhooks/orders/create"
+  # topics = [ "orders/create" ]
 
-  # Mandatory compliance topic for public apps only
-  # See: https://shopify.dev/docs/apps/build/privacy-law-compliance
-  # [[webhooks.subscriptions]]
-  # uri = "/webhooks/customers/data_request"
-  # compliance_topics = ["customers/data_request"]
-
-  # [[webhooks.subscriptions]]
-  # uri = "/webhooks/customers/redact"
-  # compliance_topics = ["customers/redact"]
-
-  # [[webhooks.subscriptions]]
-  # uri = "/webhooks/shop/redact"
-  # compliance_topics = ["shop/redact"]
+[auth]
+redirect_urls = [
+  "https://example.com/auth/callback",
+  "https://example.com/auth/shopify/callback",
+  "https://example.com/api/auth/callback"
+]
