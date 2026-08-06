@@ -97,6 +97,28 @@ app review / Built-for-Shopify adds a few weeks.
 Math: flat $49/mo → ~170 merchants = $100k ARR. Incumbent review counts
 (~90 each) suggest low-thousands installs — a winnable solo-scale market.
 
+**Market sizing (verified Aug 2026):** Native deposits are Shopify
+Plus-exclusive ($2,300–2,500/mo), forcing everyone below Plus to an app.
+High-AOV pool: jewelry ~50–88k stores, plus furniture/home, bridal, art,
+equipment → ~150–250k stores; made-to-order subset needing deposits
+~20–40k. Actual category penetration today: Downpay ~955 installs
+(+29% YoY); whole category ~3–5k paying stores — underpenetrated and
+growing.
+
+**Pricing model:** tier on features, never usage. Starter $29 (deposits +
+manual balance invoicing, unlimited order value) / Pro $59 (automated
+vaulted-card balance capture, portal, reminders) / Studio $99 (FR/EN,
+Flow + API, free migration, priority support). Annual = 2 months free;
+founding offer: first 100 stores lock Pro at $39 for life to seed reviews.
+$29 matches Downpay's sticker; $59 beats their real cost for anyone doing
+>$5k/mo. Infra is ~$100/mo total and Shopify takes 0% of first $1M app
+revenue → ~95% gross margin at any tier.
+
+**Revenue scenarios (blended ~$55 ARPU):** slow Y1 60 merchants ≈ $40k ARR;
+base Y1 150 ≈ $99k; Y2 400 ≈ $264k; Y3 900+ ≈ $600k (top-3 in category).
+Churn naturally low: open vaulted balances make mid-cycle switching hard —
+which is also why a free migration tool is the main poaching weapon.
+
 ### Tier 2 — Solid, situational
 
 **4. Productized reporting service: Meta Ads analysis for small e-commerce.**
