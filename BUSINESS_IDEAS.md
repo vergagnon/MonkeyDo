@@ -67,6 +67,36 @@ nicely: the directory audience later becomes the customer list for idea #1.
 *Autonomy ~95%. Revenue ceiling: $1–15k MRR per directory, and it's repeatable
 across niches. Defensibility: low individually, real as a portfolio.*
 
+**2b. ⭐ Deposit app with flat pricing (no % of sale) — deep dive**
+Verified landscape (Aug 2026): every incumbent meters usage. Depo charges
+$9–149/mo *plus* 1%→0.5% + $0.10–0.20 per transaction. Downpay ($29/mo, 5.0★
+category leader) has no %, but caps processed order value at $5k/mo (Starter)
+and $25k/mo (Pro, $99), with per-order overage beyond — a usage tax in
+flat-fee clothing. Partialy only drops its commission at an Enterprise tier.
+Nobody sells true flat unlimited at a normal price.
+
+Key economics: deposit apps never touch the money — payments run through the
+merchant's own Shopify Payments; the app orchestrates terms and charges the
+vaulted card for the balance. Per-merchant costs are fixed, so % fees are pure
+margin capture. A flat-price entrant ($39–49/mo, unlimited order value)
+concedes nothing structurally.
+
+Positioning: "One price. No percentages, no caps, no overages — ever."
+Target the merchants usage pricing hurts most: few orders, huge values
+(custom furniture, jewelry, bridal, art commissions, equipment). Marketing =
+comparison pages (Downpay/Depo alternatives) + a free "what do deposit-app
+fees cost you at your AOV" calculator.
+
+Caveats: (1) price is a wedge, not a moat — incumbents can uncap; durable
+moat = reviews + made-to-order workflow depth + FR/EN. (2) Build a free
+"migrate your open balances" flow — switching friction is the real barrier to
+poaching. (3) Shopify is slowly adding native deposits; stay valuable at the
+workflow layer. (4) Built on selling-plan API + vaulted payment mandates;
+app review / Built-for-Shopify adds a few weeks.
+
+Math: flat $49/mo → ~170 merchants = $100k ARR. Incumbent review counts
+(~90 each) suggest low-thousands installs — a winnable solo-scale market.
+
 ### Tier 2 — Solid, situational
 
 **4. Productized reporting service: Meta Ads analysis for small e-commerce.**
